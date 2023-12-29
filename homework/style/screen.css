@@ -1,0 +1,104 @@
+.screen {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+.screen .guide {
+  display: flex;
+  /*  */
+  /* align-items: center; */
+  list-style-type: none;
+  margin: 30px 0px 15px;
+  padding: 0;
+}
+
+.screen .guide.version {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.screen .guide li {
+  /* float: left; */
+  margin: 0 10px;
+  padding: 0 0;
+  list-style-type: none;
+}
+.screen .guide li a{
+  white-space: nowrap;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.screen .guide li a[type="title"] {
+  cursor:text;
+}
+.screen .guide li a[type="title"]:hover {
+  color: black;
+}
+
+.screen .guide li {
+  margin: 0;
+}
+.title-guide {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 15px;
+}
+.res-title {
+  font-size: 26px;
+  margin: 30px 0 10px;
+  padding: 0;
+  /* width: 200px; */
+}
+
+.screen .guide.new-hot li a {
+  margin: 0;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+}
+/* 设置四角圆角 */
+.guide.new-hot li:first-child a {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+.guide.new-hot li:last-child a {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.screen .guide a.new-selected, 
+.screen .guide a.hot-selected, 
+.screen .guide a.version-selected, 
+.screen .guide a.area-selected {
+  background-color: #31c27c;
+  color: white;
+}
+
+.all_id {
+  margin-right: 10px;
+}
+.area_id, .version_id {
+  position: relative;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 10px;
+  padding-right: 25px;
+  border: 1px solid #c9c9c9;
+  border-radius: 2px;
+}
+.area_id:hover, .version_id:hover {
+  background-color: #31c27c;
+  color: white;
+}
+.delete_area, 
+.delete_version {
+  position: absolute;
+  /* 垂直居中 */
+  top: 40%;
+  right: 5px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}

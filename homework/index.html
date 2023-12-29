@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MV库</title>
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/screen.css">
+  <link rel="stylesheet" href="style/item.css">
+  <link rel="icon" href="data/images/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+
+    <ul class="guide top-header">
+      <li>
+        <img class="logo" src="data/images/logo.png" alt="logo""></li>
+      <li><a class=" active" href="#home">音乐馆</a>
+      </li>
+      <li><a href="#my">我的音乐</a></li>
+      <li><a href="#app">
+          <div class="app-container">
+            <img src="data/images/mark_1.png" class="vip-icon" width="40px" height="15px">
+            客户端
+          </div>
+        </a></li>
+      <li><a href="#open">开放平台</a></li>
+      <li><a href="#vip">VIP</a></li>
+      <li>
+        <div class="search-box">
+          <input class="search_text" placeholder="搜索音乐、MV、歌单、用户" />
+          <i class="fa fa-search" id="i-advanced-search-i"></i>
+        </div>
+      </li>
+      <li><a href="#login">登录</a></li>
+
+      <li class="dropdown_top_vip">
+        <div class="dropdown_vip">
+          <a>开通VIP</a>
+        </div>
+        <div class="dropdown_content_vip">
+          <a>开通超级会员</a>
+          <a>开通绿钻豪华版</a>
+        </div>
+      </li>
+
+      <li class="dropdown_top_buy">
+        <div class="dropdown_buy">
+          <a>充值</a>
+        </div>
+        <div class="dropdown_content_buy">
+          <ul>
+            <li>
+              <a>购买乐币</a>
+            </li>
+            <li class="buy_ticket">
+              <a>充值饭票</a>
+              <ul>
+                <li class="pay_online"><a>网银支付</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+
+    <ul class="guide second-header">
+      <li><a href="#home">首页</a></li>
+      <li><a href="#singer">歌手</a></li>
+      <li><a href="#music">新碟</a></li>
+      <li><a href="#ranking">排行榜</a></li>
+      <li><a href="#class">分类歌单</a></li>
+      <li><a href="#radio">电台</a></li>
+      <li><a class="active" href="#mv">MV</a></li>
+      <li><a href="#song">数字专辑</a></li>
+    </ul>
+  </div>
+
+
+  <div class="screen">
+    <ul class="guide area">
+      <li><a type="title">区域</a></li>
+      <li><a id="0">全部</a></li>
+      <li><a id="2">内地</a></li>
+      <li><a id="1">港台</a></li>
+      <li><a id="3">欧美</a></li>
+      <li><a id="4">韩国</a></li>
+      <li><a id="5">日本</a></li>
+    </ul>
+    <ul class="guide version">
+      <li><a type="title">版本</a></li>
+      <li><a id="0">全部</a></li>
+      <li><a id="1">MV</a></li>
+      <li><a id="2">现场</a></li>
+      <li><a id="3">翻唱</a></li>
+      <li><a id="5">舞蹈</a></li>
+      <li><a id="4">影视</a></li>
+      <li><a id="6">综艺</a></li>
+      <li><a id="7">儿歌</a></li>
+    </ul>
+
+    <div class="title-guide">
+      <span class="res-title">
+        <!-- <span class="all_id">全部MV</span>
+        <span class="area_id" id="1">
+          内地
+          <a class="delete"></a>
+        </span>
+        <span class="version_id" id="1">
+          MV
+          <a class="delete"></a>
+        </span> -->
+      </span>
+
+      <ul class="guide new-hot">
+        <li><a id="new">最新</a></li>
+        <li><a id="hot">最热</a></li>
+      </ul>
+    </div>
+    <ul class="image-container"></ul>
+
+  </div>
+  <script src="screen.js"></script>
+</body>
+
+</html>

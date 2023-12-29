@@ -1,0 +1,240 @@
+body {
+  background-color: #fafafa;
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  justify-content: center;
+  background-color: white;
+  /* max-width: 80%; */
+  margin: 0;
+  /* width: 80%; */
+  padding: 0;
+}
+
+.top-header .logo {
+  margin: 0 10px;
+}
+.guide.top-header {
+  display: flex;
+  /* 居中显示 */
+  justify-content: center;
+  align-items: center;
+  /* 分散对齐 */
+  /* justify-content: space-between; */
+  margin: 0px 10%;
+  padding: 0;
+  /* max-width: 80%; */
+  /* border-bottom: 1px solid #f2f2f2; */
+}
+
+.second-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0 10%;
+  padding: 0;
+  border-top: 1px solid #f2f2f2;
+}
+.top-header li a {
+  white-space: nowrap;
+}
+.second-header li a {
+  white-space: nowrap;
+  padding: 15px 20px;
+}
+
+.guide > li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.guide > li > a {
+  color: black;
+  display: block;
+  width: fit-content;
+  margin: 0;
+  padding: 20px 10px;
+  /* text-align: center; */
+  text-decoration: none;
+  /* white-space: nowrap; */
+}
+
+
+.guide > li > a:hover {
+  color: #31c27c;
+}
+
+
+.guide li > a.active {
+  background-color: #31c27c;
+  color: white;
+}
+
+.second-header li a.active {
+  background-color: white;
+  color: #59c588;
+}
+
+.app-container {
+  position: relative;
+  /* 设置容器为相对定位，以便后续绝对定位的元素相对于容器定位 */
+}
+
+.vip-icon {
+  position: absolute;
+  top: -15px;
+  right: -25px;
+  /* 将图片定位到容器的右上角 */
+}
+
+.search-box {
+  position: relative;
+  border:1px solid #ccc;
+  border-radius: 5px;
+}
+.search_text {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  text-indent: 2px;
+  border: 0;
+}
+
+.search_text:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .search_text {
+    display: none;
+  }
+  .search-box:hover .search_text{
+    display: block; 
+  }
+  
+}
+
+.fa.fa-search {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.fa.fa-search:hover {
+  color: #3fc685;
+}
+
+
+.dropdown_vip, .dropdown_buy {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.dropdown_buy:hover {
+  color: white;
+  background-color: #31c27c;
+}
+.dropdown_vip {
+  /* margin: 0; */
+  /* padding: 12px 40px; */
+  background-color: #31c27c;
+  color: white;
+  /* width: 70px; */
+}
+.dropdown_vip a {
+  margin: 0;
+  padding: 10px 30px;
+}
+.dropdown_buy {
+  margin: 0;
+  padding: 10px 30px;;
+}
+.dropdown_buy a {
+  margin: 0;
+  padding: 0;
+}
+
+li.dropdown_top_vip, li.dropdown_top_buy {
+  font-size: 14px;;
+  margin: 0 20px;
+  position: relative;
+}
+
+.dropdown_content_vip, .dropdown_content_buy {
+  margin:0;
+  padding:0;
+  /* width: 40px; */
+  display: none;
+  position: absolute;
+  color: black;
+  min-width: 100%;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  overflow: visible;
+  border:none;
+}
+
+.dropdown_top_vip:hover .dropdown_content_vip, 
+.dropdown_top_buy:hover .dropdown_content_buy{
+  display: block;
+}
+
+.dropdown_content_vip a{
+  display: block;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  overflow: visible;
+}
+
+.dropdown_content_buy ul {
+  list-style-type: none;
+  padding: 0;
+}
+.dropdown_content_buy a {
+  display: block;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  overflow: visible;
+}
+.buy_ticket {
+  position: relative;
+}
+.pay_online {
+  display: none;
+  position: absolute;
+  right: -80px;
+  top: 0;
+}
+.buy_ticket:hover .pay_online {
+  display: inline;
+  z-index: 1;
+}
+
+.dropdown_content_vip a:hover, .dropdown_content_buy a:hover {
+  color: white;
+  background-color: #31c27c;
+}
